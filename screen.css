@@ -1,4 +1,145 @@
-/* Add screen styles below */
-a.active {
-    font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+:root {
+    --main-bg-color: #E9E9E9;
+    --primary-text-color: #424242;
+    --accent-color: #FF3F3C;
+}
+
+body {
+    background: var(--main-bg-color);
+    color: var(--primary-text-color);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+main {
+    background: url('PolaroidPhoto.png') no-repeat center 140px;
+    margin: 0 auto;
+    max-width: min(1000px, 100%);
+    padding: clamp(24px, 5vw, 40px) clamp(24px, 5v2, 40px) 120px;
+}
+
+.hero {
+    text-align: center;
+    min-height: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h2 {
+    font-size: clamp(3rem, 10vw, 9rem);
+    line-height: 0.95; 
+    margin-top: 40px;
+    font-weight: 900;
+    padding: 0 140px 120px;
+}
+
+.details {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.details h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.details ul li{
+    list-style-type: none;
+    margin: 18px 0;
+    padding-left: 36px;
+    font-size: 1rem;
+    line-height: 1.4;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+}
+
+.details ul li.wifi {
+    background: url('wifi-solid\ 13.svg') no-repeat center left;
+}
+
+.details ul li.cloud {
+    background: url('cloud-arrow-up-solid\ 13.svg') no-repeat center left;
+}
+
+.details ul li.qr {
+    background: url('qrcode-solid\ 13.svg') no-repeat center left;
+}
+
+.details ul li.pic {
+    background: url('photo-film-solid\ 13.svg') no-repeat center left;
+}
+
+.cta h3 {
+    text-align: center;
+    margin-top: 52px;
+     font-size: 2rem;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+
+.cta form {
+    display: grid;
+    grid-template-columns: minmax(28ch, 1fr) auto;
+    gap: 12px;
+    background: #E0E0E0;
+    padding: 18px;
+    border-radius: 14px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.cta input[type="button"] {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+.cta input[type="email"] {
+    min-width: 28ch;
+    flex: 1;
+    padding: 14px 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+.cta input[type="button"] {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
 }
